@@ -22,7 +22,10 @@ requirements:
     dockerPull: "quay.io/wtsicgp/dockstore-cgpmap:3.2.0"
 
 hints:
-  - $mixin: cwls/mixins/hints.yml
+  - class: ResourceRequirement
+    coresMin: 1 # works but long, 6 recommended
+    ramMin: 15000 # good for WGS human ~30-60x
+    outdirMin: 5000000 # unlikely any BAM processing would be possible in less
 
 inputs:
   reference:
