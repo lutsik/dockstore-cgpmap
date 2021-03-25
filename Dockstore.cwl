@@ -123,18 +123,3 @@ outputs:
       glob: $(inputs.sample).bam.maptime
 
 baseCommand: ["/opt/wtsi-cgp/bin/ds-cgpmap.pl"]
-
-$schemas:
-  - http://schema.org/docs/schema_org_rdfa.html
-
-$namespaces:
-  s: http://schema.org/
-
-s:codeRepository: https://github.com/cancerit/dockstore-cgpmap
-s:license: https://spdx.org/licenses/AGPL-3.0-only
-
-s:author:
-  - class: s:Person
-    s:identifier: https://orcid.org/0000-0002-5634-1539
-    s:email: mailto:cgphelp@sanger.ac.uk
-    s:name: Keiran Raine
