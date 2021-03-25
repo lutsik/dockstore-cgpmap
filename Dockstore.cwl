@@ -18,7 +18,8 @@ doc: |
   A Docker container for PCAP-core. See the [dockstore-cgpmap](https://github.com/cancerit/dockstore-cgpmap) website for more information.
 
 requirements:
-  - $mixin: cwls/mixins/requirements.yml
+  - class: DockerRequirement
+    dockerPull: "quay.io/wtsicgp/dockstore-cgpmap:3.2.0"
 
 hints:
   - $mixin: cwls/mixins/hints.yml
